@@ -1,0 +1,228 @@
+/* 
+primary color: #FFB5A7
+second color: #FCD5CE
+3td color: #F8EDEB
+4th color:#F9DCC4
+5th color: #FEC89A
+
+*/
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'lato';
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left top, #FFB5A7,#FCD5CE,#FEC89A);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    min-height: 90vh;
+    width: 90%;
+    background-color: #eee;
+    -webkit-box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3); 
+    box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3);
+}
+.logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(149, 149, 149, 0.418);
+    height: 77px;
+}
+.logo{
+    width: 180px;
+}
+.containte-box{
+    display: flex;
+    background-image: linear-gradient(to left top, #ffb6a7a1,#fcd5ce8f,#fec99a93),url("assets/img/illustration.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 541px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.bio{
+    margin-bottom: 134px;
+    
+    color: rgb(77, 73, 73);
+}
+.bio h1{
+    font-family: 'playball';
+    font-size: 45px;
+
+    font-weight: 100;
+}
+.bio p{
+    font-size: 18px;
+}
+.login-form{
+    background: linear-gradient(to left top, #ffb6a7,#fcd5ce8f,#fec99a);
+    padding: 10px 5px;
+    height: 371px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3); 
+    box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.login-form .form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+.login-form .form-login p{
+    margin-top: -30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1a1919;
+}
+.login-form .form-login input{
+    display: block;
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+
+}
+.login-form .form-login button{
+    width: 100%;
+    padding: 8px;
+    color: #000;
+    background-color: #FCD5CE;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    transition: all .2s;
+}
+.login-form .form-login .login{
+    text-decoration: none;
+    color: currentColor;
+}
+.input-box{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.login-form .form-login button:hover{
+    
+    background-color: transparent;
+    border: 1px solid #FEC89A;
+}
+.login-form .form-login button:active{
+    outline: none;
+}
+
+.signup{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 94%;
+    padding: 8px;
+    color: #000;
+    background-color: #FEC89A;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+.signup:hover{
+    background-color: transparent;
+    border: 1px solid #FEC89A;
+}
+.license-box{
+    color: rgb(59, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.license-box span{
+    font-family: 'playball';
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-content .para{
+    margin-top: 5px;
+    font-size: 35px;
+    font-weight: 100;
+}
+.form-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3); 
+    box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3);
+    background: linear-gradient(to left top, #ffb6a7,#fcd5ce8f,#fec99a);
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+
+    
+}
+.form-content form *{
+    display: block;
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.form-content .form button{
+    width: 83%;
+    padding: 8px;
+    color: #000;
+    background-color: #FEC89A;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    transition: all .2s;
+}
+.haveAccount{
+    color: #fb9c89;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .2s;
+}
+.haveAccount:hover{
+    text-decoration: underline;
+}
+.form-content form button:hover{
+    
+background-color: transparent;
+border: 1px solid #FEC89A;
+}
+.form-content .form .form-radio{
+    width: 50%;
+    display: flex
+}
+.form-content .form .form_radio-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-content .form .form-radio label{
+    font-size: 16px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+.form-content .form .form_radio-input{
+    display: none;
+}

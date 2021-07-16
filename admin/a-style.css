@@ -1,0 +1,334 @@
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'lato';
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left top, #FFB5A7,#FCD5CE,#FEC89A);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-origin: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+.wrapper{
+    width: 90%;
+    background-color: rgb(21, 24, 77);
+    -webkit-box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3); 
+    box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid rgba(149, 149, 149, 0.418);
+
+}
+
+.header .user-logo{
+    margin-top: 17px;
+}
+.header .user-logo img{
+    width: 150px;
+    
+}
+.user-profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+}
+.user-profil:hover .dropdown-content{
+    display: block;
+}
+.familly svg, .notification svg{
+    width: 30px;
+    fill:  #FFB5A7;
+}
+.familly svg:hover, .notification svg:hover{
+    fill: #fb9c89;
+}
+.familly, .notification{
+    margin: 0 10px;
+    position: relative;
+}
+.familly span, .notification span{
+    background-color: rgb(230, 27, 27);
+    display: inline-block;
+    padding: 4px;
+    border-radius: 1000000px;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+}
+.profil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 1;
+    margin-right: 20px;
+    transition: all .1s;
+    padding: 20px 5px;
+    
+}
+.profil:hover{
+    background-color: rgb(22, 27, 112);
+}
+.profil img{
+    width: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+    
+}
+.profil p{
+    font-weight: 100;
+    color: #FFB5A7;
+}
+.containte{
+display: flex;
+height: 600px;
+}
+.containte .side-bar{
+    width: 20%;
+    background-color: #FFB5A7;
+
+}
+.containte .main-part{
+    width: 80%;
+    background-color: #F9DCC4;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #fb9c89;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    clip-path: polygon(0 13%, 27% 13%, 49% 0, 68% 13%, 100% 13%, 100% 99%, 0 100%);
+    -webkit-box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3); 
+    box-shadow: 1px 3px 6px 2px rgba(0,0,0,0.3);
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(21, 24, 77);
+    color: #fb9c89;    
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  .model-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.model-wrapper img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #fb9c89;
+    margin-bottom: 10px;
+}
+.model-wrapper .user-name{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+}
+.model-wrapper .user-name p{
+    margin-right: 5px;
+}
+.model-wrapper .edit{
+    
+  color: #fb9c89;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all .2s;
+}
+.model-wrapper .edit:hover{
+    text-decoration: underline;
+}
+.menu-containte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-containte ul{
+    list-style: none;
+    font-size: 20px;
+    width: 100%;
+
+}
+.menu-containte ul li{
+    margin: 0 0 10px 0;
+    background-color:  #ff876f;
+    width: 100%;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.menu-containte ul li:hover{
+    filter: brightness(85%)
+}
+.menu-containte .active{
+    background-color:  rgb(21, 24, 77);
+    color: #ff876f;
+
+}
+.menu-containte a{
+    text-decoration: none;
+    color: currentColor;
+}
+.main-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.main-part table{
+    width: 98%;
+    margin-top: 15px;
+    margin-right: 12px;
+}
+.main-part .list-police-table{
+    margin-top: 70px;
+
+}
+.main-part .list-menu{
+    background-color: rgb(85, 84, 84);
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.main-part .item{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+.main-part .item-img{
+    width: 20px;
+    margin: 5px;
+}
+.main-part .item-img:hover{
+    filter: brightness(50%);
+}
+.main-part .add-btn{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: rgb(22, 27, 112);
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    color: #fb9c89;
+    top: 15px;
+}
+.main-part .add-btn:hover{
+    filter: brightness(85%);
+}
+.main-part .add-btn img{
+    width: 30px;
+    margin-right: 5px;
+}
+.dividor{
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(133, 131, 131);
+    margin-bottom: 15px;
+}
+.dividor:last-child{
+    padding-bottom: 0;
+    border: 0;
+    margin: 0;
+}
+.dividor .dividor-title{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.country{
+    position: relative;
+}
+.add-btn-county{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: rgb(22, 27, 112);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fb9c89;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 94px;
+    margin: 15px 0 0 5px;
+}
+.add-btn-county img{
+    width: 30px;
+    margin-right: 5px;
+}
+.form-editable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-editable input, select,textarea{
+    
+    width: 340px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.form-editable button{
+    width: 126px;
+    padding: 8px 10px;
+    border: none;
+    background-color: #3e8e41;
+}
+.message span{
+    background-color: #fb9c89;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
